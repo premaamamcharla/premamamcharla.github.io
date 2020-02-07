@@ -1,0 +1,200 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="css/style.css" rel="stylesheet">
+
+
+
+</head>
+<body id="page-top">
+     <nav>
+     	<ul>
+     	<li><a>Prema's</a></li>
+       <li style="float: right;"><a href="#contact">CONTACT</a></li>
+       <li style="float: right;"><a href="#about">ABOUT</a></li>
+       <li style="float: right;"><a href="#home">HOME</a></li>
+       
+        </ul>
+     <style>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+
+  display: block;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+  </style>
+	</nav>
+
+	<div id="home" class="intro route bg-image" style="background-image: url(img/light.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          
+          <h1 class="intro-title mb-4">I am Prema Latha</h1>
+           <p id="typing" class="typing"><strong class="text-slider"></strong></p>
+          <script type="text/javascript">
+          	
+          	var typeString = ['web developer'];
+            var  i = 0;
+            var count = 0
+            var selectedText = '';
+             var text = '';
+             (function type() {
+            if (count == typeString.length) {
+            count = 0;
+            }
+             selectedText = typeString[count];
+             text = selectedText.slice(0, ++i);
+             document.getElementById('typing').innerHTML = text;
+             if (text.length === selectedText.length) {
+             count++;
+             i = 0;
+             }
+        setTimeout(type, 200);
+          }());
+
+           function sleep(milliseconds) {
+            var start = new Date().getTime();
+            for (var i = 0; i < 1e7; i++) {
+             if ((new Date().getTime() - start) > milliseconds){
+            break;
+          }
+        }
+      }
+          </script>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+  <div id="about" class="about" style="color: white" >
+
+     <h1 style="color: white">About </h1>
+     <div class="row">
+     <div class="column">
+     <img src="img/Prema.jpg" alt="Premelatha" style="width:40%">
+     </div></div>
+     <div class="row">
+      <div class="column">
+        
+        <h2 style="color:white">Amamcharla Premelatha</h2>
+        
+        <p style="color:white;text-align: left;font-size: 16";><span><strong>Profile: </strong></span> <span >Web Developer</span></p><br>
+        <p style="color: white;text-align: left;font-size: 16"><span><strong>Email: </strong> </span> <span>premaamancharla@gmail.com</span></p><br>
+        <p style="color: white;text-align: left;font-size: 16"><span><strong>About:</strong></span></p>
+        <p style="color: white;text-align: left;font-size: 16">Prolific, web developer with a passion for metrics and beating former "best-yets".Passionate about building world class web applications</p>
+        <p style="color: white;text-align: left;font-size: 16"><span><strong>Education: </strong></span><br>
+
+        	<br>
+
+        	     2017-2021 BE, Computer Science<br>
+
+                 SCSVMV  University<br>
+
+ 
+
+                Followed my passion in a web development classes.<br>
+                Excelled in web designing.
+               .</p>
+        
+        
+        
+      </div></div>
+     </div>
+  	
+
+</section>
+ 	
+
+
+
+
+<section  >
+<div id="contact" class="contact" >
+	<div class="container">
+	
+       <h1 style="text-align: center;color: black">Contact Us</h2>
+        <p style="text-align: center;">
+            Swing by for a cup of coffee, or leave us a message
+        </p>
+        <form role="form" method="post" id="reused_form">
+            
+                    <label for="name">
+                        First Name:</label>
+                    <input type="text"  id="firstname" name="firstname"  maxlength="50">
+                
+                
+                    <label for="name">
+                        Last Name:</label>
+                    <input type="text"  id="lastname" name="lastname"  maxlength="50">
+                
+            
+                    <label for="email">
+                        Email:</label>
+                    <input type="text"  id="email" name="email"
+                    maxlength="50">
+               
+                
+            
+                    <label for="name">
+                        Message:</label>
+                    <textarea  type="textarea" id="message" name="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                
+                    <button type="submit" id="btnContactUs">Post It! </button>
+              <div >
+        	        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <ul>
+                      <li><a href="https://www.facebook.com/prema.amamcharla"><span><i class="fa fa-facebook"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/in/prema-amamcharla-8b5148184"><span ><i class="fa fa-linkedin"></i></span></a></li>
+                      <li><a href="https://www.instagram.com/prema_amamcharla"><span ><i class="fa fa-instagram"></i></span></a></li>
+                      
+                    </ul>
+                  </div>
+
+        </form>
+        
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Sent your message successfully!</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+  
+
+</body>
+</html>
